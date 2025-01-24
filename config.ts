@@ -7,12 +7,12 @@ export const window = {
     resizable: false,
     maximizable: false,
     fullscreenable: false,
-    title: 'Aurora Launcher',
+    title: 'Little Launcher',
 };
 
 export const api = {
-    ws: 'ws://127.0.0.1:1370/ws',
-    web: 'http://127.0.0.1:1370',
+    ws: 'ws://95.165.108.42:25623/ws',
+    web: 'http://95.165.108.42:25623',
     publicKey,
 };
 

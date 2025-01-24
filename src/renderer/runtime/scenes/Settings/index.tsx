@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react';
 
 import { version } from '../../../../../package.json';
 import { SettingsFormat } from '../../../../common/types';
-import logo from '../../assets/images/logo.png';
+import logo from '../../assets/images/pony.png';
 import If from '../../components/If';
 import { MemoryRange } from '../../components/MemoryRange';
 import { useTitlebar } from '../../components/TitleBar/hooks';
@@ -173,7 +173,7 @@ export default function Settings() {
                         <button
                             onClick={() =>
                                 launcherAPI.window.openExternal(
-                                    'https://www.youtube.com/@AuroraTeamRu',
+                                    'https://www.youtube.com/@levontiy',
                                 )
                             }
                         >
@@ -201,7 +201,7 @@ export default function Settings() {
                         <button
                             onClick={() =>
                                 launcherAPI.window.openExternal(
-                                    'https://aurora-launcher.ru/',
+                                    'https://mineshit.ru/',
                                 )
                             }
                         >

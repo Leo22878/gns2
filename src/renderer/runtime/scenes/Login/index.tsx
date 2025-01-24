@@ -2,7 +2,7 @@ import { FormEvent, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 
 import { setUserData } from '../../../utils';
-import logo from '../../assets/images/logo.png?asset';
+import logo from '../../assets/images/pony.png?asset';
 import { useModal } from '../../components/Modal/hooks';
 import { useTitlebar } from '../../components/TitleBar/hooks';
 import classes from './index.module.sass';
@@ -44,7 +44,7 @@ export default function Login() {
         if (login.length < 3) {
             return showModal(
                 'Ошибка ввода',
-                'Логин должен быть не менее 3-ёх символов',
+                'Ник должен быть не менее 3-ёх символов',
             );
         }
 
@@ -70,13 +70,12 @@ export default function Login() {
             <img src={logo} />
             <div>{window.title}</div>
             <p>
-                Введите логин и пароль,
+                Введите ник
                 <br />
                 чтобы продолжить
             </p>
             <form onSubmit={auth}>
                 <input type="text" placeholder="Логин" name="login" />
-                <input type="password" placeholder="Пароль" name="password" />
                 <button>Войти</button>
                 <label className={classes.autoLogin}>
                     <input 
