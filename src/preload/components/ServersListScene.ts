@@ -1,0 +1,26 @@
+import { Server } from '@aurora-launcher/core';
+import { ServersResponse } from '@aurora-launcher/proto';
+import { ipcRenderer } from 'electron';
+import { ServerInfo } from 'minestat-es';
+
+import { EVENTS } from '../../common/channels';
+
+export default class ServersListScene {
+    static getServers(): Promise<ServersResponse> {
+        return ipcRenderer.invoke(EVENTS.SCENES.SERVERS_LIST.GET_SERVERS);
+    }
+
+    static selectServer(server: Server) {
+        return ipcRenderer.invoke(
+            EVENTS.SCENES.SERVERS_LIST.SELECT_SERVER,
+            server,
+        );
+    }
+
+    static pingServer(server: Server): Promise<ServerInfo> {
+        return ipcRenderer.invoke(
+            EVENTS.SCENES.SERVERS_LIST.PING_SERVER,
+            server,
+        );
+    }
+}
