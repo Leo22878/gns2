@@ -2,7 +2,7 @@ import pluginJs from '@eslint/js';
 import pluginReact from 'eslint-plugin-react';
 import globals from 'globals';
 import tseslint from 'typescript-eslint';
-
+/** всем привет */
 /** @type {import('eslint').Linter.Config[]} */
 export default [
     { ignores: ['dist', 'out'] },

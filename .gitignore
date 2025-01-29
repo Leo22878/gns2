@@ -1,7 +1,7 @@
 # Aurora files ignore
 build
 out
-
+#
 # Logs
 logs
 *.log
