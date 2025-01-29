@@ -70,12 +70,13 @@ export default function Login() {
             <img src={logo} />
             <div>{window.title}</div>
             <p>
-                Введите ник
+                Введите логин и пароль,
                 <br />
                 чтобы продолжить
             </p>
             <form onSubmit={auth}>
                 <input type="text" placeholder="Логин" name="login" />
+                <input type="password" placeholder="Пароль" name="password" />
                 <button>Войти</button>
                 <label className={classes.autoLogin}>
                     <input 
