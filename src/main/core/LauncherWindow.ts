@@ -132,7 +132,7 @@ export class LauncherWindow {
             resizable: windowConfig.resizable || false,
             maximizable: windowConfig.maximizable || false,
             fullscreenable: windowConfig.fullscreenable || false,
-            title: windowConfig.title || 'Aurora Launcher',
+            title: windowConfig.title || 'Little Launcher',
             icon: iconImage,
             webPreferences: {
                 webSecurity: false, // disable cors check
