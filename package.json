@@ -1,6 +1,6 @@
 {
     "name": "aurora-launcher-app",
-    "version": "0.5.0",
+    "version": "0.6.0",
     "description": "Launcher for Minecraft",
     "main": "out/main/index-obf.loader.js",
     "private": true,
