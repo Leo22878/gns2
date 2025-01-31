@@ -1,6 +1,6 @@
 {
     "name": "little-launcher-app",
-    "version": "0.7.0",
+    "version": "1.0.0",
     "description": "Launcher for Minecraft",
     "main": "out/main/index-obf.loader.js",
     "private": true,
